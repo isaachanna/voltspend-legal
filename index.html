@@ -1,0 +1,344 @@
+<title>VoltSpend Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0A0F0D;
+    --surface: #121A17;
+    --surface-raised: #17211D;
+    --border: #223029;
+    --border-strong: #2E4038;
+    --text-primary: #EAF2EE;
+    --text-secondary: #93A9A0;
+    --text-tertiary: #62766D;
+    --accent: #3ED598;
+    --accent-soft: rgba(62, 213, 152, 0.14);
+    --focus-ring: #58E6AC;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #F5F8F6;
+      --surface: #FFFFFF;
+      --surface-raised: #EEF4F0;
+      --border: #DBE6E0;
+      --border-strong: #C4D5CC;
+      --text-primary: #122019;
+      --text-secondary: #4C5F56;
+      --text-tertiary: #7C8D84;
+      --accent: #1B9464;
+      --accent-soft: rgba(27, 148, 100, 0.10);
+      --focus-ring: #157A52;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --bg: #F5F8F6;
+    --surface: #FFFFFF;
+    --surface-raised: #EEF4F0;
+    --border: #DBE6E0;
+    --border-strong: #C4D5CC;
+    --text-primary: #122019;
+    --text-secondary: #4C5F56;
+    --text-tertiary: #7C8D84;
+    --accent: #1B9464;
+    --accent-soft: rgba(27, 148, 100, 0.10);
+    --focus-ring: #157A52;
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0A0F0D;
+    --surface: #121A17;
+    --surface-raised: #17211D;
+    --border: #223029;
+    --border-strong: #2E4038;
+    --text-primary: #EAF2EE;
+    --text-secondary: #93A9A0;
+    --text-tertiary: #62766D;
+    --accent: #3ED598;
+    --accent-soft: rgba(62, 213, 152, 0.14);
+    --focus-ring: #58E6AC;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.65;
+  }
+
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.masthead {
+    margin-bottom: 40px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+
+  .brand-mark svg { width: 16px; height: 16px; }
+
+  .brand-name {
+    font-family: "Outfit", ui-sans-serif, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+  }
+
+  h1 {
+    font-family: "Outfit", ui-sans-serif, sans-serif;
+    font-size: clamp(30px, 5vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+
+  .updated {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12.5px;
+    color: var(--text-tertiary);
+    letter-spacing: 0.01em;
+  }
+
+  nav.jump {
+    display: flex;
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  nav.jump a {
+    font-size: 13.5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-secondary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 8px 14px;
+    border-radius: 999px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  nav.jump a:hover { border-color: var(--accent); color: var(--text-primary); }
+
+  .doc-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 56px 0 24px;
+    scroll-margin-top: 24px;
+  }
+
+  .doc-title:first-of-type { margin-top: 0; }
+
+  .doc-title h2 {
+    font-family: "Outfit", ui-sans-serif, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .doc-title .doc-eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  section.clause {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+  }
+
+  section.clause h3 {
+    font-family: "Outfit", ui-sans-serif, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  section.clause p {
+    margin: 0;
+    max-width: 68ch;
+    color: var(--text-secondary);
+    font-size: 15px;
+  }
+
+  section.clause p a { word-break: break-word; }
+
+  footer.contact {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 13.5px;
+  }
+
+  footer.contact a { color: var(--accent); text-decoration: none; }
+  footer.contact a:hover { text-decoration: underline; }
+
+  ::selection { background: var(--accent-soft); }
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 2L4 14H11L10 22L20 9H13L13 2Z" fill="var(--accent)"/>
+        </svg>
+      </span>
+      <span class="brand-name">VoltSpend</span>
+    </div>
+    <h1>Privacy Policy &amp; Terms of Use</h1>
+    <div class="updated">LAST UPDATED &middot; 6 SEPTEMBER 2026</div>
+    <nav class="jump" aria-label="Jump to section">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
+    </nav>
+  </header>
+
+  <div class="doc-title" id="privacy">
+    <div>
+      <div class="doc-eyebrow">Document 01</div>
+      <h2>Privacy Policy</h2>
+    </div>
+  </div>
+
+  <section class="clause">
+    <h3>Overview</h3>
+    <p>VoltSpend is designed to work entirely on your device. There are no user accounts, no sign-up, and no VoltSpend server that your data is sent to. Everything you enter or scan &mdash; appliances, electricity rate settings, and timer history &mdash; is stored locally on your device using standard on-device storage, and stays there unless you delete the app or your device's own backup system (e.g. iCloud or Google account backup) includes app data as part of a full device backup.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Camera and photos</h3>
+    <p>VoltSpend requests camera access for two scanning features: photographing an appliance's power or energy label, and photographing a page of your electricity bill to read your rates. Photo library access lets you choose an existing photo instead of using the camera directly, for either feature. In both cases, the photo is processed entirely on your device using on-device text recognition (Apple's or Google's on-device OCR, depending on platform) to read whatever's in it. Photos are never uploaded to a server by VoltSpend and are not sent anywhere outside your device by the app itself. A photo is only used at the moment you scan it &mdash; VoltSpend doesn't keep a copy of it, or of an electricity bill photo specifically, afterward.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Advertising (Google AdMob)</h3>
+    <p>VoltSpend uses Google AdMob (react-native-google-mobile-ads) to show ads. AdMob is a third-party service operated by Google that is not controlled by VoltSpend. VoltSpend does not request permission to track you (no App Tracking Transparency prompt) and explicitly requests non-personalised ads from Google, so ads are not based on your advertising identifier or cross-app activity. Even so, to serve any ad at all Google AdMob may collect and process information such as your IP address, approximate location derived from it, general app and device information, and non-personalised interaction data, in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own privacy policy</a>. VoltSpend does not receive or store this data itself &mdash; it is collected and processed directly by Google as the advertising provider.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Notifications</h3>
+    <p>If you turn on a cost or time limit for an appliance, VoltSpend schedules a local notification on your device to alert you as you approach or pass that limit. These notifications are generated and delivered entirely on your device &mdash; they are not sent from a VoltSpend server (VoltSpend doesn't operate one), and no data about your usage leaves your device to make them happen. You can turn notification permission off at any time in your device's system settings; limits will still show an in-app warning while you're using the app, just without the background alert.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Exporting, importing, and sharing your data</h3>
+    <p>VoltSpend lets you export everything you've stored in the app to a file, and later import that file back in &mdash; on this device or another. An export only leaves your device if and when you actively choose a destination in your device's own share sheet (for example, saving it to Files, or sending it to yourself); VoltSpend does not upload it anywhere automatically. Sharing a cost result as an image works the same way &mdash; nothing is sent anywhere until you pick where to send it. Importing a file replaces or merges data already on your device, entirely locally; VoltSpend never reads this data for any purpose other than restoring it into the app at your request.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Appliance lookup data</h3>
+    <p>The appliance brand/model lookup feature uses publicly available data from the Australian Government's Energy Rating Product Database (data.gov.au), used under a Creative Commons Attribution 3.0 Australia licence. This is product registration data (brand, model, energy consumption figures) &mdash; it is not personal information, and using this feature does not send any information about you to that database; the data is bundled into the app itself.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Information we don't collect</h3>
+    <p>VoltSpend does not require or collect your name, email address, or any account credentials, as there is no account system. VoltSpend does not track you across other apps or websites, and does not sell personal information, because it does not operate a service that collects personal information from you in the first place.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Children's privacy</h3>
+    <p>VoltSpend is a general household utility tool and is not directed at children. It does not knowingly collect personal information from children. Because the app has no accounts and stores data locally, no personal information is knowingly collected from anyone, including children, other than what a device's advertising SDK (Google AdMob, above) may process on Google's side.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Your rights and choices</h3>
+    <p>Since all VoltSpend data lives on your device, you have direct control over it at all times: delete an appliance from within the app, use Settings to export a backup, reset the app to remove everything and start fresh, or uninstall the app to remove all locally stored data at once. If you have concerns about how Google AdMob processes data on Google's side, Google's privacy policy explains your choices, including ad personalisation controls in your device settings. If you believe an Australian Privacy Principle has been breached and the Privacy Act 1988 (Cth) applies to this app, you may lodge a complaint with the <a href="https://www.oaic.gov.au" target="_blank" rel="noopener">Office of the Australian Information Commissioner (OAIC)</a>.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Changes to this policy</h3>
+    <p>If VoltSpend's data practices change (for example, if a future feature introduces an optional account or cloud sync), this policy will be updated and the "Last updated" date above will change accordingly.</p>
+  </section>
+
+  <div class="doc-title" id="terms">
+    <div>
+      <div class="doc-eyebrow">Document 02</div>
+      <h2>Terms of Use</h2>
+    </div>
+  </div>
+
+  <section class="clause">
+    <h3>Acceptance</h3>
+    <p>By using VoltSpend, you agree to these terms. If you don't agree, please don't use the app.</p>
+  </section>
+
+  <section class="clause">
+    <h3>What VoltSpend is &mdash; and isn't</h3>
+    <p>VoltSpend is an independent, personal cost-estimation tool. It is not affiliated with, endorsed by, or officially connected to any electricity retailer, network distributor, or government body, including but not limited to EnergyAustralia, ENGIE, or the Australian Government's Department of Climate Change, Energy, the Environment and Water &mdash; even where the app displays publicly available data originally published by those organisations. VoltSpend does not provide financial, legal, or professional advice of any kind, and its figures should not be treated as a substitute for your actual electricity bill or for advice from a qualified professional.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Estimates only &mdash; accuracy is not guaranteed</h3>
+    <p>Every dollar figure VoltSpend shows is an estimate, built from assumptions you can see and edit (your entered electricity rate or rate plan, the appliance's detected or entered specifications, and an assumed usage pattern where you haven't set your own). Sources of inaccuracy include, but are not limited to: on-device OCR misreading a label or an electricity bill photo &mdash; since a misread rate from a bill scan affects every cost figure VoltSpend shows, not just one appliance, always check a scanned rate against your bill before relying on it; a scanned or looked-up appliance's real-world power draw differing from its rated or registered figure; third-party government registration data that may be outdated, refer to a different regional variant, or not exactly match your specific unit; and simplifications in how the app models real electricity tariffs. Always cross-check anything important against your actual electricity bill.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Third-party and government data</h3>
+    <p>Appliance lookup data is sourced from the Australian Government's Energy Rating Product Database, &copy; Department of Climate Change, Energy, the Environment and Water, used under a Creative Commons Attribution 3.0 Australia licence. This data is provided "as is"; VoltSpend makes no warranty as to its accuracy, completeness, or currency, and is not responsible for errors in the underlying government data.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Limitation of liability</h3>
+    <p>To the maximum extent permitted by law, VoltSpend and its developer are not liable for any loss or damage arising from your use of, or reliance on, the app or the figures it shows, including financial decisions made based on its estimates. Nothing in these terms excludes, restricts, or modifies any consumer guarantee, right, or remedy that cannot lawfully be excluded under the Australian Consumer Law or any other applicable law.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Backups are your responsibility</h3>
+    <p>VoltSpend keeps your data on your device only &mdash; there is no VoltSpend account or cloud backup. Replacing your data with an imported file, or resetting the app, permanently deletes whatever isn't kept (VoltSpend asks you to confirm before either happens, but cannot undo them afterward). If you want a safety copy, use the export feature before making a change you might want to reverse.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Acceptable use</h3>
+    <p>Don't use VoltSpend for any unlawful purpose, or in a way that could damage, disable, or impair the app or interfere with anyone else's use of it.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Changes to these terms</h3>
+    <p>These terms may be updated from time to time as the app changes. Continuing to use VoltSpend after an update means you accept the revised terms.</p>
+  </section>
+
+  <section class="clause">
+    <h3>Governing law</h3>
+    <p>These terms are governed by the laws of Australia.</p>
+  </section>
+
+  <footer class="contact">
+    Questions? Contact <a href="mailto:zeektechau@gmail.com">zeektechau@gmail.com</a>
+  </footer>
+</div>
